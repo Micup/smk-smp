@@ -5,8 +5,7 @@ include "../config/inc.connection.php";
 $kd_petugas = $_POST['kd_petugas'];
 $nm_petugas = $_POST['nm_petugas'];
 $username = $_POST['username'];
-$pass = $_POST['pass'];
-$pass = md5('pass');
+$pass = md5($_POST['pass']);
 $level = $_POST['level'];
 if (empty($pass))
 
